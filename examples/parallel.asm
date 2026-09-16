@@ -1,0 +1,9 @@
+.reg R1 4
+.reg R2 5
+.reg R3 2
+MUL R8, R1, R2
+ADD R9, R1, R3
+SUB R10, R2, R3
+MUL R11, R2, R3
+ADD R12, R1, R2
+ADD R13, R9, R10

@@ -1,0 +1,7 @@
+id,instruction,issue,start,end,writeback,slot
+1,"LD R3, 0(R1)",1,2,4,5,MEM0
+2,"MUL R4, R3, R2",2,6,10,11,MUL0
+3,"ST R4, 4(R1)",3,12,14,15,MEM1
+4,"LD R5, 4(R1)",4,16,18,19,MEM2
+5,"ADDI R6, R5, -1",5,20,21,22,ADD0
+6,"ST R6, 8(R1)",6,23,25,26,MEM0

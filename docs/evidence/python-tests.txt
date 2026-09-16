@@ -1,0 +1,45 @@
+test_500_random_programs_against_independent_oracle (test_simulator.TomasuloTests.test_500_random_programs_against_independent_oracle) ... ok
+test_bad_memory_addresses_fail (test_simulator.TomasuloTests.test_bad_memory_addresses_fail) ... ok
+test_cdb_arbitrates_and_retains_loser (test_simulator.TomasuloTests.test_cdb_arbitrates_and_retains_loser) ... ok
+test_cli_outputs_and_error_status (test_simulator.TomasuloTests.test_cli_outputs_and_error_status) ... ok
+test_empty_program_and_no_trace (test_simulator.TomasuloTests.test_empty_program_and_no_trace) ... ok
+test_hand_calculated_hazard_timeline (test_simulator.TomasuloTests.test_hand_calculated_hazard_timeline) ... ok
+test_html_escapes_script_terminator (test_simulator.TomasuloTests.test_html_escapes_script_terminator) ... ok
+test_integer_edges (test_simulator.TomasuloTests.test_integer_edges) ... ok
+test_invalid_config_and_cycle_limit (test_simulator.TomasuloTests.test_invalid_config_and_cycle_limit) ... ok
+test_issue_stall_blocks_later_different_group (test_simulator.TomasuloTests.test_issue_stall_blocks_later_different_group) ... ok
+test_latency_one_still_needs_separate_writeback (test_simulator.TomasuloTests.test_latency_one_still_needs_separate_writeback) ... ok
+test_load_before_younger_store (test_simulator.TomasuloTests.test_load_before_younger_store) ... ok
+test_memory_example (test_simulator.TomasuloTests.test_memory_example) ... ok
+test_older_consumer_keeps_older_producer (test_simulator.TomasuloTests.test_older_consumer_keeps_older_producer) ... ok
+test_parser_comments_and_hex (test_simulator.TomasuloTests.test_parser_comments_and_hex) ... ok
+test_parser_rejects_bad_input (test_simulator.TomasuloTests.test_parser_rejects_bad_input) ... ok
+test_r0_never_renamed (test_simulator.TomasuloTests.test_r0_never_renamed) ... ok
+test_raw_waits_for_broadcast (test_simulator.TomasuloTests.test_raw_waits_for_broadcast) ... ok
+test_same_cycle_issue_reads_cdb_value (test_simulator.TomasuloTests.test_same_cycle_issue_reads_cdb_value) ... ok
+test_self_destination_is_read_before_rename (test_simulator.TomasuloTests.test_self_destination_is_read_before_rename) ... ok
+test_slot_reuse_and_unique_tags (test_simulator.TomasuloTests.test_slot_reuse_and_unique_tags) ... ok
+test_step_matches_run_and_snapshot_is_independent (test_simulator.TomasuloTests.test_step_matches_run_and_snapshot_is_independent) ... ok
+test_store_data_keeps_old_register_version (test_simulator.TomasuloTests.test_store_data_keeps_old_register_version) ... ok
+test_two_cdbs_can_broadcast_together (test_simulator.TomasuloTests.test_two_cdbs_can_broadcast_together) ... ok
+test_uninitialized_load_zero_and_negative_offset (test_simulator.TomasuloTests.test_uninitialized_load_zero_and_negative_offset) ... ok
+test_unknown_older_store_address_blocks_load (test_simulator.TomasuloTests.test_unknown_older_store_address_blocks_load) ... ok
+test_war_captures_old_source (test_simulator.TomasuloTests.test_war_captures_old_source) ... ok
+test_waw_does_not_overwrite_newer_value (test_simulator.TomasuloTests.test_waw_does_not_overwrite_newer_value) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.874s
+
+OK
+Instructions: 6 | Cycles: 15 | IPC: 0.400
+ ID  Instruction                Issue Start   End    WB
+  1  MUL R8, R1, R2                 1     2     6     7
+  2  ADD R9, R8, R3                 2     8     9    10
+  3  SUB R8, R4, R5                 3     4     5     6
+  4  ADD R3, R6, R7                 4     6     7     8
+  5  MUL R10, R8, R7                5     7    11    12
+  6  ADD R11, R9, R10               6    13    14    15
+Registers: R0=0, R1=6, R2=7, R3=23, R4=8, R5=2, R6=20, R7=3, R8=6, R9=142, R10=18, R11=160
+PASS: all 32 registers and full initialized/written memory match sequential reference
+Output: <project-root>/build/hazards
+Open build/hazards/trace.html in your browser.

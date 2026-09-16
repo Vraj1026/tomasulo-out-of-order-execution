@@ -1,0 +1,22 @@
+Source: excerpt transcribed from the macOS Terminal output shared by Vraj Patel.
+Command: bash run.sh
+The complete Python and HDL tool versions were not included in that output.
+This record covers the Python suite and model demo; it is not an RTL run.
+
+Ran 28 tests in 1.158s
+OK
+
+The successful test list included:
+test_500_random_programs_against_independent_oracle ... ok
+
+Instructions: 6 | Cycles: 15 | IPC: 0.400
+ ID  Instruction                Issue Start End WB
+  1  MUL R8, R1, R2                 1     2   6  7
+  2  ADD R9, R8, R3                 2     8   9 10
+  3  SUB R8, R4, R5                 3     4   5  6
+  4  ADD R3, R6, R7                 4     6   7  8
+  5  MUL R10, R8, R7                5     7  11 12
+  6  ADD R11, R9, R10               6    13  14 15
+
+Registers: R0=0, R1=6, R2=7, R3=23, R4=8, R5=2, R6=20, R7=3, R8=6, R9=142, R10=18, R11=160
+PASS: all 32 registers and full initialized/written memory match sequential reference

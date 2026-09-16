@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "backend": "verilator",
+  "profile": "default",
+  "cases": 208,
+  "random_seeds": 200,
+  "checked_cycles": 20407,
+  "checks": [
+    "issue timing",
+    "CDB valid, tag, value every cycle",
+    "32 final registers",
+    "drain",
+    "pending tags cleared",
+    "reset during in-flight work"
+  ]
+}

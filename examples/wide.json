@@ -1,0 +1,5 @@
+{
+  "units": {"ADD": 2, "MUL": 2},
+  "stations": {"ADD": 5, "MUL": 4},
+  "cdb_width": 2
+}

@@ -1,0 +1,9 @@
+User-supplied Terminal output from macOS (transcribed excerpt).
+Icarus Verilog version was not included in the shared output.
+
+Command:
+python3 scripts/verify_rtl.py --backend iverilog
+
+PASS: 208 RTL cases, 20407 cycles checked (iverilog, default).
+
+Waveform: /Users/vrajt.patel/Desktop/tomasulo-project/tomasulo-project/build/rtl-default/hazards.vcd

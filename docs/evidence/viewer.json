@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "environment": "jsdom 30.0.1",
+  "checks": [
+    "hazards: initial render, 32 registers, 8 stations, next/back, slider, keyboard, play/pause, drained state PASS",
+    "memory: initial render, 32 registers, 8 stations, next/back, slider, keyboard, play/pause, drained state PASS"
+  ],
+  "visual_browser_review": false
+}
