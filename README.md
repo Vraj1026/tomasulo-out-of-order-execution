@@ -175,7 +175,3 @@ power results are claimed.
 - GitHub Actions workflow
 - Offline HTML trace viewer and VCD waveform output
 
-The project topic was inspired by
-[heyneil09/Tomasulo-algorithm-for-out-of-order-execution](https://github.com/heyneil09/Tomasulo-algorithm-for-out-of-order-execution).
-This implementation has its own interface, timing specification, and tests.
-See [references and implementation notes](docs/reference_review.md) for details.
